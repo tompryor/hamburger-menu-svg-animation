@@ -1,0 +1,54 @@
+<svg id="menu-icon" viewBox="0 0 800 600" style="border: 1px solid #000;" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <style>
+        path {
+        transition: stroke-dashoffset 0.5s ease-in-out,
+        stroke-dasharray 0.5s ease-in-out;
+        stroke-width: 40px;
+        stroke-linecap: round;
+        stroke: #a06ba5;
+        }
+
+        path#top, path#bottom {
+        stroke-dasharray: 240px 910px;
+        }
+
+        path#middle {
+        stroke-dasharray: 240px 240px;
+        }
+
+        .cross path#top, .cross path#bottom {
+        stroke-dashoffset: -650px;
+        }
+
+        .cross path#middle {
+        stroke-dashoffset: -115px;
+        stroke-dasharray: 1px 220px;
+        }
+    </style>
+
+    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+          id="top"
+          stroke="red"
+          stroke-width="3"
+          fill="none">
+    </path>
+
+    <path d="M300,320 L540,320" id="middle" stroke="red" stroke-width="3">
+    </path>
+
+    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+          id="bottom"
+          transform="translate(480, 320) scale(1, -1) translate(-480, -318)" stroke="red" stroke-width="3"
+          fill="none">
+    </path>
+
+
+    <script type="text/javascript"><![CDATA[
+
+        document.documentElement.addEventListener('click',function(evt){
+        document.documentElement.classList.toggle('cross');});
+
+    ]]></script>
+</svg>
