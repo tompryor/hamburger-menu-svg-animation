@@ -1,30 +1,34 @@
-<svg id="menu-icon" viewBox="0 0 800 600" style="border: 1px solid #000;" xmlns="http://www.w3.org/2000/svg"
+<svg id="menu-icon" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <style>
+        #menu-icon {
+            cursor: pointer;
+        }
+
         path {
-        transition: stroke-dashoffset 0.5s ease-in-out,
-        stroke-dasharray 0.5s ease-in-out;
-        stroke-width: 40px;
-        stroke-linecap: round;
-        stroke: #a06ba5;
+            transition: stroke-dashoffset 0.5s ease-in-out,
+            stroke-dasharray 0.5s ease-in-out;
+            stroke-width: 40px;
+            stroke-linecap: round;
+            stroke: #a06ba5;
         }
 
         path#top, path#bottom {
-        stroke-dasharray: 240px 910px;
+            stroke-dasharray: 240px 910px;
         }
 
         path#middle {
-        stroke-dasharray: 240px 240px;
+            stroke-dasharray: 240px 240px;
         }
 
         .cross path#top, .cross path#bottom {
-        stroke-dashoffset: -650px;
+            stroke-dashoffset: -650px;
         }
 
         .cross path#middle {
-        stroke-dashoffset: -115px;
-        stroke-dasharray: 1px 220px;
+            stroke-dashoffset: -115px;
+            stroke-dasharray: 1px 220px;
         }
     </style>
 
